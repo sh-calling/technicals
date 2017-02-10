@@ -15,9 +15,13 @@
 3. 在`[mysqld]`下添加以下配置：
 
    `init_connect='SET collation_connection = utf8_unicode_ci'`
+
    `init_connect='SET NAMES utf8'`
+
    `character-set-server=utf8`
+
    `collation-server=utf8_unicode_ci`
+
    `skip-character-set-client-handshake`
 
 4. 重启MySQL，果不其然，启动成功了。通过`show variables like 'character%'`，发现`character_set_server`变为`utf8`了。
