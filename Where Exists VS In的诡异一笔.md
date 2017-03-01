@@ -44,18 +44,17 @@ where NAME in (select null from testFromWhereExistsAndIn);
 
 结果集1：
 
-```ID	NAME
+```
 ID	NAME
 1	RIDLEY SCOTT
-1	TOM FORD
-1	TOM HARDY 
+2	TOM FORD
+3	TOM HARDY 
 ```
 
 结果集2：
 
-```ID	NAME
+```
 ID	NAME
-
 ```
 
 **需要注意一下NULL值**。
